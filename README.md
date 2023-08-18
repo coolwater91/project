@@ -2,13 +2,11 @@
 
 1. [💻 프로젝트 소개](#-프로젝트-소개)
 2. [📦 개발 환경](#-개발-환경)
-3. [✍ 주요 기능 소개](#-주요-기능-소개)
-   - [sub menu event](#✔-sub-menu-event)
-   - [무한 루프 인기 순위](#✔-무한-루프-인기-순위)
-   - [무한 루프 이미지 슬라이드](#✔-무한-루프-이미지-슬라이드)
-   - [상품 선택 기능](#✔-상품-선택-기능)
-   - [Json data 가져와서 정렬](#✔-json-data-가져와서-정렬)
-   - [scroll Top btn](#✔-scroll-top-btn)
+3. [✍ 내가 맡은 주요 기능 소개](#-주요-기능-소개)
+   - [회원 가입 기능](#✔-회원-가입-기능)
+   - [짐 서비스 기능](#✔-짐-서비스-기능)
+   - [고객 게시판 CRUD](#✔-고객-게시판-CRUD)
+   - [관리자 기능](#✔-관리자-기능)
 4. [✅ 프로젝트 리뷰](#-프로젝트-리뷰)
 
 <br />
@@ -18,16 +16,14 @@
 
 <div align="center">
 
-  <img src="https://github.com/future9061/coffeebean-mobile/assets/132829711/41f37a3a-b2f8-4f2b-820a-2ab956492054" width="50%">
+  <img src="https://github.com/coolwater91/project/assets/129029570/c433780d-b297-4356-8431-3f73b82ed295" width="50%">
 
-![image](https://github.com/future9061/coffeebean-mobile/assets/132829711/ed3b9c00-bbcf-4b03-95ca-e2198a05d721)
-
-사이트 URL : https://musical-daifuku-70205f.netlify.app/
+사이트 URL : http://13.125.213.74:8080/roaming/userboard/mainPage
 
    <p align="start">
-    프로젝트 .<br>
-    만드는 당시에는 모바일 처럼 보이게만 ui를 구성해놓았는데 이번에 pwa로 변환을 해봤습니다. <br>
-    pwa를 선택한 이유는 별도로 앱 스토어 이용 없이 설치할 수 있다는 점. <br> 오프라인 상태에서도 사용 가능하다는 점이 장점으로 다가와서 pwa를 이용하게 되었습니다.
+    프로젝트 .<br><br>
+    대부분의 기존 여행사이트들이 커머스 기능만 있기때문에 저희는 커뮤니티기능을 강화하여 사용자친화적인 여행사이트를 만드려고 했습니다. <br><br>
+    사이트의 주요기능은 동행찾기, 커뮤니티, 숙소예약, 포인트샵, 짐서비스 등이 있으며, 액터로는 사이트 사용자, 숙소 판매자, 사이트 관리자가 있습니다. 
       
    </p>
 </div>
@@ -46,15 +42,18 @@
 
 ## ✍ 주요 기능 소개
 
-### ✔ sub menu event
+### ✔ 회원 가입 기능
 
-#### [코드 보기](#sub-menu)
+<div align="center">
+<img src="https://github.com/coolwater91/project/assets/129029570/8e1567d8-8147-447f-8ae3-fbc0bca76181" width="50%">
+</div>
 
-메인 메뉴에 마우스를 올리면 하단의 sub menu가 바뀌는 이벤트입니다.  
- 전에는 메인메뉴와 서브 메뉴의 id를 비교하는 방식을 주로 썼었으나, <br />
-이번에는 id 없이 forEach에서 this와 submenu를 비교해 클라스를 추가했습니다. <br />
-
-   <img src="https://github.com/future9061/ohou_future/assets/132829711/69b4842f-26cd-4929-9744-e3d012ffdc0a" width="50%">
+#### 유효성 검사 항목들
+* 이미 존재하는 아이디 검사
+* 올바른 이메일 형식인지 검사
+* 암호와 암호 재입력이 일치하는지 하는 검사
+* 모든 항목에 값이 있는지 확인하는 검사
+* 필수 약관에 체크했는지 확인하는 검사<br/><br/>
 
 <br />
 <br />
@@ -62,12 +61,8 @@
 
 ## ✅ 프로젝트 리뷰
 
-이번 프로젝트를 만들면서 이상한 문제가 생겼었다. <br >
-local에선 잘 보이는 background-image가 배포만 하면 안 보이는 것이다. <br >
+프로젝트 도중 github 커밋, 진행상황 기록이 미흡했던게 아쉬웠다. <br >
+초반에 코드를 날려먹었던 기억때문에 다들 미뤄뒀다가 마지막에 한꺼번에 합치느라 고생했었다. . <br >
 
-<img src="https://github.com/future9061/apple_mac_shopping/assets/132829711/93f8304d-f9ce-47a4-baa4-20deecf11453" width="300">
-<img src="https://github.com/future9061/apple_mac_shopping/assets/132829711/944dbbe9-829d-4963-afe9-9d08c7093858" width="300">
-
-live server에서는 잘 보였으니 경로 문제라고는 생각 못해서 background 축약형을 잘 못 쓰거나 div 크기 지정을 잘못했나 싶었는데 경로를 잘못 지정한게 맞았다.
 
 <br>
